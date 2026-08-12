@@ -1,8 +1,8 @@
 # MCP
 
-No project MCP is required for initial stages.
+На начальных этапах проектный MCP не требуется.
 
-Future MCP is allowed only if the application itself exposes useful semantic operations such as:
+Будущий MCP допускается только в том случае, если само приложение предоставляет полезные семантические операции, например:
 - analyse_track
 - propose_segments
 - explain_segment_score
@@ -10,4 +10,4 @@ Future MCP is allowed only if the application itself exposes useful semantic ope
 - build_timeline
 - render_preview
 
-MCP must call Application Services, not duplicate business logic.
+MCP должен вызывать Application Services, а не дублировать бизнес-логику.

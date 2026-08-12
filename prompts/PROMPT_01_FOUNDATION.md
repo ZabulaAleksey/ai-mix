@@ -1,5 +1,5 @@
-# PROMPT 01 — Foundation
+# PROMPT 01 — основа проекта
 
-Create the Python/uv project skeleton and core domain models without audio-analysis features.
-Add tests, typed configuration, logging, SQLite adapter skeleton and CLI health/info command.
-No GUI yet. No heavy ML dependencies.
+Создай каркас проекта Python/uv и основные доменные модели без функций анализа аудио.
+Добавь тесты, типизированную конфигурацию, журналирование, каркас адаптера SQLite и CLI-команду проверки состояния и информации.
+GUI пока не требуется. Не добавляй тяжёлые ML-зависимости.

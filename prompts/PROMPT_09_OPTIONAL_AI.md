@@ -1,3 +1,3 @@
-# PROMPT 09 — Optional ML/AI adapters
+# PROMPT 09 — необязательные адаптеры ML/AI
 
-Only after baseline benchmarks: add optional Demucs/ONNX/other ML adapters behind feature flags with fallback, memory benchmark, model provenance and quality comparison.
+Только после базовых benchmarks добавь необязательные адаптеры Demucs/ONNX и других ML-систем за feature flags с fallback, измерением памяти, происхождением модели и сравнением качества.

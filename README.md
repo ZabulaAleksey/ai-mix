@@ -1,10 +1,10 @@
 # AI Mix Assistant
 
-Offline-first AI/DSP assistant for analysing tracks, selecting strong fragments,
-planning compatible sequences and transitions, and producing a non-destructive
-timeline for review and finishing in Adobe Audition.
+Локальный по умолчанию AI/DSP-ассистент для анализа треков, выбора сильных фрагментов,
+планирования совместимых последовательностей и переходов и создания неразрушающего
+таймлайна для проверки и финальной обработки в Adobe Audition.
 
-The current repository contains the project specification, architecture,
-quality gates, staged implementation prompts, and AI Dev Team integration
-overlay. See [SPEC.md](SPEC.md) for the product scope and
-[PROGRESS.md](PROGRESS.md) for the current implementation status.
+Репозиторий содержит спецификацию и архитектуру проекта, критерии качества,
+поэтапные prompts реализации и интеграционный overlay AI Dev Team.
+Границы продукта описаны в [SPEC.md](SPEC.md), а текущее состояние реализации —
+в [PROGRESS.md](PROGRESS.md).

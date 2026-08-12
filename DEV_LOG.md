@@ -1,3 +1,3 @@
-# DEV LOG
+# Журнал разработки
 
-Chronological engineering log. Record concrete implementation actions, commands, failures, migrations and fixes. Keep it factual and detailed enough to reconstruct what happened without reading every commit.
+Хронологический инженерный журнал. Записывай конкретные действия по реализации, команды, сбои, миграции и исправления. Сохраняй фактическую точность и достаточную детализацию, чтобы восстановить ход работы без чтения каждого коммита.

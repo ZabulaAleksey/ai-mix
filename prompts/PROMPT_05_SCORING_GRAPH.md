@@ -1,4 +1,4 @@
-# PROMPT 05 — Scoring & Compatibility Graph
+# PROMPT 05 — оценивание и граф совместимости
 
-Implement SegmentScore breakdown and pairwise TransitionScore/CompatibilityEdge.
-No black-box scalar without breakdown. Add regression fixtures and configuration-driven weights.
+Реализуй детализацию SegmentScore и попарные TransitionScore/CompatibilityEdge.
+Не используй скалярную оценку как «чёрный ящик» без детализации. Добавь регрессионные fixtures и веса, задаваемые конфигурацией.

@@ -1,28 +1,28 @@
-# Quality Gates
+# Критерии качества
 
-## DSP correctness
-- deterministic fixtures
-- tolerance-based numeric assertions
-- no NaN/Inf propagation
-- reproducible analysis config/version
+## Корректность DSP
+- детерминированные fixtures;
+- числовые проверки с допуском;
+- отсутствие распространения NaN/Inf;
+- воспроизводимые конфигурация и версия анализа.
 
-## Segment/transition ranking
-- golden fixtures
-- component-score inspection
-- regression tests
-- manual listening set for qualitative evaluation
+## Ранжирование фрагментов и переходов
+- эталонные fixtures;
+- проверка оценок компонентов;
+- регрессионные тесты;
+- набор для ручного прослушивания и качественной оценки.
 
-## Rendering
-- duration and sample-rate checks
-- clipping detection
-- loudness/peak checks
-- no source overwrite
-- cancel/retry/resume where long-running
+## Рендеринг
+- проверка длительности и частоты дискретизации;
+- обнаружение clipping;
+- проверка громкости и пикового уровня;
+- отсутствие перезаписи источников;
+- отмена, повтор и возобновление длительных операций.
 
-## Performance
-Profile before optimise. Benchmark decode, analysis, segmentation, scoring and render separately.
+## Производительность
+Перед оптимизацией выполняй профилирование. Измеряй декодирование, анализ, сегментацию, оценивание и рендеринг отдельно.
 
-## Privacy/security
-- no raw media committed
-- paths/logs redact sensitive data where appropriate
-- external processing requires explicit opt-in
+## Конфиденциальность и безопасность
+- исходные медиафайлы не добавляются в коммиты;
+- чувствительные данные при необходимости скрываются в путях и журналах;
+- внешняя обработка требует явного согласия пользователя.

@@ -1,11 +1,11 @@
-# Transition Regression Skill
+# Skill регрессионной проверки переходов
 
-Use when changing scoring/transition logic.
+Используй при изменении логики оценивания или переходов.
 
-Compare:
-- old/new score breakdowns
-- golden track pairs
-- tempo/key/phrase results
-- vocal-overlap behaviour
-- processing cost
-- listening-test notes when qualitative behaviour changes
+Сравнивай:
+- прежнюю и новую детализацию оценок;
+- эталонные пары треков;
+- результаты по темпу, тональности и фразам;
+- поведение при наложении вокала;
+- стоимость обработки;
+- заметки тестового прослушивания при изменении качественного поведения.

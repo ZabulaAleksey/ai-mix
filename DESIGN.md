@@ -1,11 +1,11 @@
-# Design
+# Дизайн
 
-Intentionally kept as a living design document.
+Документ намеренно поддерживается как актуальное описание развивающегося дизайна.
 
-Initial direction:
-- dark professional DAW-like workspace
-- Library → Timeline → Inspector
-- dense information without visual noise
-- cyan / amber / violet semantic accents
-- waveform + beat/phrase overlays
-- every AI suggestion has a visible “Why?” affordance
+Исходное направление:
+- тёмное профессиональное рабочее пространство в стиле DAW;
+- библиотека → таймлайн → инспектор;
+- высокая информационная плотность без визуального шума;
+- голубой / янтарный / фиолетовый семантические акценты;
+- форма волны с наложением долей и фраз;
+- у каждой AI-рекомендации есть заметное объяснение «Почему?».

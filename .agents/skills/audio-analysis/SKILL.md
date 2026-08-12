@@ -1,13 +1,13 @@
-# Audio Analysis Skill
+# Skill анализа аудио
 
-Use when implementing or reviewing track analysis.
+Используй при реализации или review анализа треков.
 
-Checklist:
-- immutable source
-- fingerprint
-- analyzer version/config hash
-- sample-rate/channel handling
-- deterministic fixture
-- NaN/Inf guard
-- timing benchmark
-- explainable result fields
+Контрольный список:
+- неизменяемый источник;
+- отпечаток;
+- версия анализатора и hash конфигурации;
+- обработка частоты дискретизации и каналов;
+- детерминированный fixture;
+- защита от NaN/Inf;
+- benchmark времени выполнения;
+- объяснимые поля результата.

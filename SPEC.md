@@ -1,92 +1,92 @@
 # AI Mix Assistant — SPEC v0.1
 
-## Goal
-Offline-first AI/DSP assistant for analysing tracks, selecting strong 20–60 second fragments, planning compatible sequences/transitions and producing a non-destructive timeline that can be reviewed and finished in Adobe Audition 2025.
+## Цель
+Локальный по умолчанию AI/DSP-ассистент для анализа треков, выбора сильных фрагментов длиной 20–60 секунд, планирования совместимых последовательностей и переходов и создания неразрушающего таймлайна, который можно проверить и доработать в Adobe Audition 2025.
 
-## Core pipeline
+## Основной конвейер
 `Ingest → Fingerprint/Metadata → Music Analysis → Structure/Phrase Segmentation → Candidate Segments → Segment Scoring → Compatibility Graph → Sequence Optimizer → Transition Planner → Non-destructive Timeline → Preview/Manual Edit → WAV/FLAC Render`
 
-## Required analysis
-- BPM / beat grid / downbeats
-- key / chroma / harmonic confidence
-- loudness / peak / dynamics
-- energy curve
-- spectral features
-- structure / sections / phrase boundaries
-- vocal density proxy
-- fingerprints / duplicate detection
+## Обязательный анализ
+- BPM / сетка долей / сильные доли;
+- тональность / chroma / уверенность гармонического анализа;
+- громкость / пиковый уровень / динамика;
+- кривая энергии;
+- спектральные признаки;
+- структура / секции / границы фраз;
+- приближённая оценка плотности вокала;
+- отпечатки / обнаружение дубликатов.
 
 ## SegmentScore
-Candidate 20–60 s windows may combine:
-- structural salience
-- energy
-- novelty/hook score
-- phrase-boundary confidence
-- tonal stability
-- rhythmic stability
-- loudness consistency
-- vocal density / vocal-overlap risk
+Оценка окон-кандидатов длиной 20–60 секунд может учитывать:
+- структурную значимость;
+- энергию;
+- новизну или выразительность фрагмента;
+- уверенность в границе фразы;
+- тональную стабильность;
+- ритмическую стабильность;
+- однородность громкости;
+- плотность вокала и риск наложения вокальных партий.
 
-Scores must be inspectable and explainable.
+Оценки должны быть доступными для проверки и объяснения.
 
 ## TransitionScore
-- tempo compatibility
-- key/harmonic compatibility
-- beat-phase compatibility
-- phrase compatibility
-- energy-flow compatibility
-- spectral density
-- vocal overlap
-- required processing cost / time-stretch amount
+- совместимость темпа;
+- совместимость тональностей и гармонии;
+- совместимость фаз долей;
+- совместимость фраз;
+- совместимость изменения энергии;
+- спектральная плотность;
+- наложение вокала;
+- стоимость необходимой обработки и величина растяжения по времени.
 
-## Non-destructive editing
-The engine must store source references, in/out points, fades, gain/envelopes, time-stretch/pitch operations and transition parameters without destructively rewriting originals.
+## Неразрушающее редактирование
+Движок должен хранить ссылки на источники, точки входа и выхода, fades, усиление и огибающие, операции изменения длительности и высоты тона и параметры переходов без перезаписи оригиналов.
 
-## UI
-Professional dark audio-workstation layout:
-- Library
-- Analysis/inspector
-- Timeline
-- Transition inspector
-- Preview
-- “Why?” explanation for segment and transition choices
+## Пользовательский интерфейс
+Профессиональный тёмный интерфейс аудиостанции:
+- библиотека;
+- анализ и инспектор;
+- таймлайн;
+- инспектор переходов;
+- предпросмотр;
+- объяснение «Почему?» для выбора фрагментов и переходов.
 
-Semantic accents:
-- cyan = analysis / compatible / technical
-- amber = warning / risky transition
-- violet = AI/recommendation
+Семантические акценты:
+- голубой = анализ / совместимость / техническая информация;
+- янтарный = предупреждение / рискованный переход;
+- фиолетовый = AI / рекомендация.
 
-## Integration
-Adobe Audition 2025 is a finishing/editing target. Codex orchestrates development; DSP/analysis is implemented by specialised libraries, not “LLM-generated audio math”.
+## Интеграция
+Adobe Audition 2025 является целевой средой финальной обработки и редактирования. Codex координирует разработку; DSP и анализ реализуются специализированными библиотеками, а не «аудиоматематикой, сгенерированной LLM».
 
-## Stack
-Baseline:
+## Стек
+Базовый:
 - Python
 - `uv`
 - librosa
-- Essentia where licensing/packaging permits
+- Essentia, если позволяют лицензирование и упаковка;
 - FFmpeg/FFprobe
-- Rubber Band for high-quality time stretch/pitch shift where available
-- aubio where useful
+- Rubber Band для качественного изменения длительности и высоты тона, где доступно;
+- aubio, где это целесообразно;
 - NumPy/SciPy
-- SQLite for local project state
+- SQLite для локального состояния проекта.
 
-Optional adapters:
-- Demucs for stem separation
-- Whisper for speech/vocal metadata experiments
-- ONNX Runtime / GPU inference when justified by benchmark
+Необязательные адаптеры:
+- Demucs для разделения stems;
+- Whisper для экспериментов с метаданными речи и вокала;
+- ONNX Runtime / вычисления на GPU, если необходимость подтверждена benchmark.
 
-## Privacy
-Local-first. Network/LLM services are optional adapters and must be explicit opt-in.
+## Конфиденциальность
+По умолчанию обработка выполняется локально. Сетевые сервисы и LLM являются необязательными адаптерами и требуют явного согласия пользователя.
 
-## Export
-- WAV/FLAC render
-- project/timeline JSON
-- interchange format where feasible
-- future Audition-friendly handoff
+## Экспорт
+- рендеринг WAV/FLAC;
+- JSON проекта и таймлайна;
+- формат обмена, где это возможно;
+- в будущем — удобная передача проекта в Audition.
 
-## Non-goals v0.1
-- fully autonomous final mastering
-- replacing Adobe Audition
-- mandatory cloud processing
-- black-box transitions without explanations
+## Не входит в цели v0.1
+- полностью автономный финальный мастеринг;
+- замена Adobe Audition;
+- обязательная облачная обработка;
+- переходы как «чёрный ящик» без объяснений.

@@ -1,4 +1,4 @@
-# PROMPT 06 — Sequence & Transition Planning
+# PROMPT 06 — планирование последовательности и переходов
 
-Build a baseline sequence optimiser and transition planner with constraints for tempo, key, phrase, energy, vocals and processing cost.
-Prefer an explainable baseline before genetic/advanced optimisation.
+Создай базовый оптимизатор последовательности и планировщик переходов с ограничениями по темпу, тональности, фразам, энергии, вокалу и стоимости обработки.
+До генетической или продвинутой оптимизации предпочитай объяснимый базовый вариант.

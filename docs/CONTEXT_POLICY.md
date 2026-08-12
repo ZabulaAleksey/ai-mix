@@ -1,20 +1,20 @@
-# Context Policy
+# Политика контекста
 
-Load order:
-1. Global AI Dev Team
-2. Root `AGENTS.md`
-3. Active module/local rules
-4. `SPEC.md` relevant section
-5. `ARCHITECTURE.md` relevant section
-6. active stage prompt
-7. current task/diff/tests
+Порядок загрузки:
+1. Глобальная AI Dev Team.
+2. Корневой `AGENTS.md`.
+3. Активные модульные или локальные правила.
+4. Относящийся к задаче раздел `SPEC.md`.
+5. Относящийся к задаче раздел `ARCHITECTURE.md`.
+6. Активный prompt этапа.
+7. Текущая задача, diff и тесты.
 
-Do not preload the entire roadmap, prompt history, old reports or all fixtures.
+Не загружай заранее всю дорожную карту, историю prompts, старые отчёты или все fixtures.
 
-Canonical:
-- requirements: `SPEC.md`
-- architecture: `ARCHITECTURE.md` + `docs/DECISIONS.md`
-- current state: `PROGRESS.md`
-- execution prompts: `prompts/`
-- implementation chronology: `DEV_LOG.md`
-- explanatory learning: `LEARNING.md`
+Канонические источники:
+- требования: `SPEC.md`;
+- архитектура: `ARCHITECTURE.md` + `docs/DECISIONS.md`;
+- текущее состояние: `PROGRESS.md`;
+- prompts выполнения: `prompts/`;
+- хронология реализации: `DEV_LOG.md`;
+- учебные объяснения: `LEARNING.md`.

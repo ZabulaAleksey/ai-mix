@@ -1,4 +1,4 @@
-# PROMPT 02 — Media Ingest
+# PROMPT 02 — приём медиафайлов
 
-Implement immutable source-media registration, FFprobe metadata, content fingerprinting, duplicate detection and local project catalog.
-Do not copy/modify source media by default.
+Реализуй регистрацию неизменяемых исходных медиафайлов, получение метаданных через FFprobe, создание отпечатков содержимого, обнаружение дубликатов и локальный каталог проекта.
+По умолчанию не копируй и не изменяй исходные медиафайлы.

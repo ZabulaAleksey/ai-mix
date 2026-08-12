@@ -1,6 +1,6 @@
-# Architecture
+# Архитектура
 
-## Layers
+## Слои
 ```text
 UI / CLI / Future MCP / Adobe adapters
                 ↓
@@ -21,16 +21,16 @@ Infrastructure adapters
 FFmpeg / Essentia / librosa / Rubber Band / Demucs / SQLite
 ```
 
-## Invariants
-1. Core does not depend on GUI.
-2. Audio files are immutable source assets.
-3. Analyses are cacheable by content fingerprint + analyzer version/config.
-4. Timeline is non-destructive and versioned.
-5. Every recommendation exposes features/scores used.
-6. Reference CPU path remains available.
-7. Heavy optional models are lazy-loaded and bounded by memory benchmark.
+## Инварианты
+1. Core не зависит от GUI.
+2. Аудиофайлы являются неизменяемыми исходными ресурсами.
+3. Результаты анализа кэшируются по отпечатку содержимого, версии и конфигурации анализатора.
+4. Таймлайн является неразрушающим и версионируемым.
+5. Каждая рекомендация показывает использованные признаки и оценки.
+6. Эталонный путь на CPU остаётся доступным.
+7. Тяжёлые необязательные модели загружаются лениво, а использование памяти ограничивается на основании benchmark.
 
-## Suggested repository
+## Предлагаемая структура репозитория
 ```text
 src/ai_mix_assistant/
   core/

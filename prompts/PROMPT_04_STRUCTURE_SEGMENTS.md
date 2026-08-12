@@ -1,4 +1,4 @@
-# PROMPT 04 — Structure & Candidate Segments
+# PROMPT 04 — структура и фрагменты-кандидаты
 
-Add section/phrase boundary abstraction and 20–60 second candidate-window generation.
-Keep segmentation engine swappable. Add explainable boundary confidence.
+Добавь абстракцию границ секций и фраз и генерацию окон-кандидатов длиной 20–60 секунд.
+Сохраняй возможность замены движка сегментации. Добавь объяснимую оценку уверенности в границе.

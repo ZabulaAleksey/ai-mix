@@ -1,5 +1,5 @@
-# LEARNING
+# Учебные заметки
 
-Detailed explanations of *why* an implementation works: DSP concepts, beat/key analysis, scoring choices, time stretching, failure modes, library behaviour and lessons learned.
+Подробные объяснения того, *почему* реализация работает: концепции DSP, анализ долей и тональности, выбор метода оценивания, изменение длительности, режимы отказа, поведение библиотек и полученные уроки.
 
-Do not collapse this into a terse changelog. `DEV_LOG.md` answers “what changed”; `LEARNING.md` answers “what we learned and why”.
+Не превращай этот документ в краткий список изменений. `DEV_LOG.md` отвечает на вопрос «что изменилось», а `LEARNING.md` — «что мы узнали и почему».

@@ -1,23 +1,23 @@
-# Progress
+# Прогресс
 
-## Current status
-Project context/specification recovered and consolidated. No repository implementation is assumed yet.
+## Текущее состояние
+Контекст и спецификация проекта восстановлены и объединены. Наличие реализации в репозитории пока не предполагается.
 
-## Current phase
-Stage 00 — repository/context bootstrap.
+## Текущий этап
+Этап 00 — первоначальная настройка репозитория и контекста.
 
-## Next
-1. Create repository.
-2. Unpack this archive into repo root.
-3. Run Prompt 00.
-4. Confirm global AI Dev Team inheritance and remove any duplicate local automation.
-5. Start Stage 01 only after Stage 00 DoD.
+## Далее
+1. Создать репозиторий.
+2. Распаковать этот архив в корень репозитория.
+3. Выполнить Prompt 00.
+4. Подтвердить наследование глобальной AI Dev Team и удалить дублирующую локальную автоматизацию.
+5. Начать этап 01 только после выполнения DoD этапа 00.
 
-## Stage completion rule
-Stage is complete only when:
-- scope implemented
-- tests/quality gates pass
-- `PROGRESS.md` updated
-- relevant `DEV_LOG.md` / `LEARNING.md` updates written
-- review completed
-- merge into main is verified
+## Правило завершения этапа
+Этап завершён только когда:
+- заявленный объём реализован;
+- тесты и критерии качества пройдены;
+- `PROGRESS.md` обновлён;
+- внесены относящиеся к работе обновления в `DEV_LOG.md` / `LEARNING.md`;
+- review завершён;
+- слияние в main проверено.

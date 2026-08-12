@@ -1,4 +1,4 @@
 # PROMPT 08 — GUI
 
-Implement Library / Timeline / Inspector / Preview and “Why?” score explanations.
-Preserve design system in `DESIGN.md`. UI must not own DSP/business logic.
+Реализуй библиотеку / таймлайн / инспектор / предпросмотр и объяснения оценок «Почему?».
+Соблюдай дизайн-систему из `DESIGN.md`. UI не должен содержать DSP или бизнес-логику.

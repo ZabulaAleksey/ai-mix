@@ -1,14 +1,14 @@
-# PROMPT 00 — Context Compatibility Audit
+# PROMPT 00 — аудит совместимости контекста
 
-Inspect the repository after this pack is unpacked.
+Проверь репозиторий после распаковки этого пакета.
 
-1. Inventory global/project `AGENTS.md`, `.codex`, Skills, hooks, MCP, Git/security workflow.
-2. Confirm the global AI Dev Team is inherited.
-3. Build a conflict/dedup matrix.
-4. Keep only AI Mix Assistant-specific deltas locally.
-5. Validate canonical docs and paths.
-6. Do not implement product features.
-7. Update `PROGRESS.md` and `docs/AI_DEV_TEAM_INTEGRATION.md`.
-8. Stop after Stage 00.
+1. Проведи инвентаризацию глобальных и проектных `AGENTS.md`, `.codex`, Skills, hooks, MCP, Git workflow и workflow безопасности.
+2. Подтверди наследование глобальной AI Dev Team.
+3. Построй матрицу конфликтов и дублирования.
+4. Оставь локально только дополнения, специфичные для AI Mix Assistant.
+5. Проверь канонические документы и пути.
+6. Не реализуй функции продукта.
+7. Обнови `PROGRESS.md` и `docs/AI_DEV_TEAM_INTEGRATION.md`.
+8. Остановись после этапа 00.
 
-DoD: no duplicated generic agents/hooks/MCP/Git workflow; project context is navigable and internally consistent.
+DoD: универсальные агенты, hooks, MCP и Git workflow не дублируются; контекст проекта удобен для навигации и внутренне согласован.

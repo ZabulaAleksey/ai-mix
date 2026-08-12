@@ -1,21 +1,21 @@
-# AI Mix Assistant — Project Overlay
+# AI Mix Assistant — проектный overlay
 
-This repository inherits the globally installed **AI Dev Team Codex**.
+Этот репозиторий наследует глобально установленную конфигурацию **AI Dev Team Codex**.
 
-## Project law
-- `project = overlay`: do not duplicate generic Architect / QA / Security / Git / Docs agents or a second Git workflow.
-- Read `SPEC.md`, `ARCHITECTURE.md`, `docs/DECISIONS.md`, `PROGRESS.md`, and the active stage prompt before implementation.
-- Business/DSP logic belongs in Core/Application; UI, CLI, future MCP and Adobe integration are adapters.
-- CPU/reference DSP path must remain available when experimental ML/GPU components are added.
-- Experimental features require: feature flag → fallback → tests → benchmark → docs/ADR.
-- Preserve user media locally by default. Never commit raw tracks, stems, exports, secrets, or user datasets.
-- Make minimal verifiable changes; update tests and `PROGRESS.md`.
-- A stage is complete only after its DoD/tests pass and review/merge criteria are satisfied.
+## Правила проекта
+- `project = overlay`: не дублируй универсальных агентов Architect / QA / Security / Git / Docs и не создавай второй Git workflow.
+- Перед реализацией прочитай `SPEC.md`, `ARCHITECTURE.md`, `docs/DECISIONS.md`, `PROGRESS.md` и активный prompt этапа.
+- Бизнес-логика и DSP относятся к слоям Core/Application; UI, CLI, будущий MCP и интеграция с Adobe являются адаптерами.
+- При добавлении экспериментальных компонентов ML/GPU должен сохраняться эталонный DSP-путь на CPU.
+- Для экспериментальных функций обязательны: feature flag → fallback → тесты → benchmark → документация/ADR.
+- По умолчанию сохраняй пользовательские медиа локально. Никогда не добавляй в коммиты исходные треки, stems, экспортированные файлы, секреты или пользовательские наборы данных.
+- Вноси минимальные проверяемые изменения; обновляй тесты и `PROGRESS.md`.
+- Этап завершён только после успешного прохождения его DoD/тестов и выполнения критериев review/merge.
 
-## Context loading
-Load only the relevant spec section, module docs, active prompt and required skill. Do not preload the whole prompt library or old reports.
+## Загрузка контекста
+Загружай только относящийся к задаче раздел спецификации, документацию модуля, активный prompt и необходимый skill. Не загружай заранее всю библиотеку prompts или старые отчёты.
 
-## Required project docs
+## Обязательные документы проекта
 - `SPEC.md`
 - `ARCHITECTURE.md`
 - `DESIGN.md`

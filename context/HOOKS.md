@@ -1,10 +1,10 @@
-# Project Hooks
+# Hooks проекта
 
-Do not install a second generic hook runner.
+Не устанавливай второй универсальный runner для hooks.
 
-Optional local hook deltas:
-- prevent committing known audio/media extensions from local fixture directories unless explicitly approved
-- validate prompt/doc links
-- run fast context-pack validation
+Необязательные локальные дополнения hooks:
+- предотвращать добавление известных расширений аудио- и медиафайлов из локальных каталогов fixtures без явного разрешения;
+- проверять ссылки в prompts и документации;
+- запускать быструю проверку context pack.
 
-Reuse global destructive-command/security hooks.
+Переиспользуй глобальные hooks защиты от разрушительных команд и нарушений безопасности.

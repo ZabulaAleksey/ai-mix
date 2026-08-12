@@ -1,16 +1,16 @@
-# Architectural Decisions
+# Архитектурные решения
 
-## ADR-001 — Project overlay
-Use the global AI Dev Team for generic agents/workflow/security/docs. Keep only AI Mix Assistant domain deltas here.
+## ADR-001 — Проектный overlay
+Использовать глобальную AI Dev Team для универсальных агентов, workflow, безопасности и документации. Локально хранить только предметные дополнения AI Mix Assistant.
 
-## ADR-002 — Offline-first
-Local analysis and project state are baseline. Cloud/LLM adapters require explicit opt-in.
+## ADR-002 — Локальная работа по умолчанию
+Локальный анализ и локальное состояние проекта являются базовым вариантом. Облачные адаптеры и LLM требуют явного согласия пользователя.
 
-## ADR-003 — Non-destructive timeline
-Never treat rendered intermediate files as canonical editing state. Canonical state is source references + operations.
+## ADR-003 — Неразрушающий таймлайн
+Не считать отрендеренные промежуточные файлы каноническим состоянием редактирования. Каноническое состояние — ссылки на источники и операции.
 
-## ADR-004 — Explainable scoring
-Segment/transition ranking must expose component scores/features. No opaque “AI says this is best”.
+## ADR-004 — Объяснимое оценивание
+Ранжирование фрагментов и переходов должно показывать оценки компонентов и признаки. Недопустим непрозрачный ответ «AI считает этот вариант лучшим».
 
-## ADR-005 — DSP libraries over LLM math
-Use established DSP/audio libraries and deterministic algorithms for analysis/rendering; LLM/Codex is orchestration/assistance, not the audio engine.
+## ADR-005 — DSP-библиотеки вместо математики LLM
+Использовать проверенные DSP/аудиобиблиотеки и детерминированные алгоритмы анализа и рендеринга; LLM/Codex выполняет координацию и помогает разработке, но не является аудиодвижком.

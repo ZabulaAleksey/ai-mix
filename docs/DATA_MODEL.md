@@ -1,20 +1,20 @@
-# Data Model
+# Модель данных
 
-Core entities:
-- Track
-- MediaFingerprint
-- AnalysisProfile
-- AnalysisResult
-- StructureSection
-- PhraseBoundary
-- CandidateSegment
-- SegmentScoreBreakdown
-- CompatibilityEdge
-- TransitionPlan
-- Timeline
-- TimelineClip
-- AutomationEnvelope
-- RenderJob
-- ExportArtifact
+Основные сущности:
+- `Track`
+- `MediaFingerprint`
+- `AnalysisProfile`
+- `AnalysisResult`
+- `StructureSection`
+- `PhraseBoundary`
+- `CandidateSegment`
+- `SegmentScoreBreakdown`
+- `CompatibilityEdge`
+- `TransitionPlan`
+- `Timeline`
+- `TimelineClip`
+- `AutomationEnvelope`
+- `RenderJob`
+- `ExportArtifact`
 
-All cached analyses include analyzer version + configuration hash.
+Все кэшированные результаты анализа содержат версию анализатора и hash конфигурации.

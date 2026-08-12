@@ -1,4 +1,4 @@
-# PROMPT 07 — Timeline & Render
+# PROMPT 07 — таймлайн и рендеринг
 
-Implement versioned non-destructive timeline state and FFmpeg/Rubber-Band render plan.
-Original files must remain untouched. Add render validation, clipping/duration checks and cancellation semantics.
+Реализуй версионируемое неразрушающее состояние таймлайна и план рендеринга FFmpeg/Rubber Band.
+Исходные файлы должны оставаться неизменными. Добавь проверку рендеринга, clipping и длительности, а также семантику отмены.

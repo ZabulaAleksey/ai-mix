@@ -1,19 +1,19 @@
-# AI Dev Team Integration
+# Интеграция AI Dev Team
 
-## Inherit
-Generic architect, planner, implementer, reviewer, security, QA, performance, documentation and Git workflow roles.
+## Наследуемые возможности
+Универсальные роли архитектора, планировщика, разработчика, reviewer, специалиста по безопасности, QA, производительности и документации, а также Git workflow.
 
-## Project-specific additions only
-- audio/DSP analyst
-- transition/scoring specialist (optional)
-- Adobe/export integration specialist (optional)
+## Только проектные дополнения
+- аналитик аудио и DSP;
+- специалист по переходам и оцениванию (необязательно);
+- специалист по интеграции с Adobe и экспорту (необязательно).
 
-## Do not duplicate
-- generic security reviewer
-- generic test agent
-- second Git workflow
-- generic docs agent
-- generic MCP servers already provided globally
-- destructive-command guard hooks already installed globally
+## Не дублировать
+- универсального reviewer по безопасности;
+- универсального агента тестирования;
+- второй Git workflow;
+- универсального агента документации;
+- универсальные MCP-серверы, уже предоставленные глобально;
+- глобально установленные hooks защиты от разрушительных команд.
 
-Before enabling a local hook/MCP/agent, run a compatibility audit.
+Перед включением локального hook, MCP или агента выполни аудит совместимости.

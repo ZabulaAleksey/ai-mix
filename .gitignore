@@ -1,0 +1,25 @@
+# user media / generated audio
+*.wav
+*.flac
+*.mp3
+*.aac
+*.m4a
+*.ogg
+*.stem.*
+media/
+exports/
+renders/
+cache/
+models/
+
+# local state
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/

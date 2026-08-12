@@ -1,0 +1,8 @@
+{
+  "name": "AI Mix Assistant Context Automation Pack",
+  "version": "0.1",
+  "mode": "project-overlay",
+  "inherits": "global AI Dev Team Codex",
+  "source_migration_item": 17,
+  "file_count": 31
+}

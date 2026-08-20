@@ -49,3 +49,21 @@ prompts/
 .codex/agents/
 .agents/skills/
 ```
+
+## Реализованная основа этапа 01
+
+```text
+CLI (`ai-mix`, `python -m ai_mix_assistant`)
+                ↓
+        SystemStatusService
+                ↓
+          StateStore port
+                ↓
+        SQLiteStateStore
+```
+
+- `core` содержит неизменяемые модели идентичности трека и кэша анализа и не зависит от adapters/UI.
+- `application` содержит типизированную конфигурацию, port локального состояния и сервис `info`/`health`.
+- `adapters` содержит composition root CLI и SQLite-реализацию с connection-per-operation.
+- `info` является read-only; `health` — явная инициализирующая операция.
+- схема v1 содержит только `schema_migrations`; доменные таблицы принадлежат следующим этапам.

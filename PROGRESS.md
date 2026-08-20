@@ -2,17 +2,17 @@
 
 ## Текущее состояние
 Контекстный overlay этапа 00 сохранён и проходит `python tools/validate_context_pack.py`.
-Основа этапа 01 реализована и локально проверена в ветке `feature/stage-01-foundation`:
+Основа этапа 01 реализована, локально проверена и слита fast-forward в `main`:
 Python/uv-пакет, фундаментальные доменные модели, typed config, logging, application
 port/service, SQLite migration skeleton и CLI `info`/`health`.
 
 ## Текущий этап
-Этап 01 — реализован и validated локально; commit/merge в `main` ещё не выполнен.
+Этап 01 — завершён: implemented, validated, committed и merged локально в `main`.
+Push в `origin/main` не выполнялся.
 
 ## Далее
-1. Зафиксировать этап 01 атомарным commit.
-2. После проверки пользователя слить рабочую ветку в `main`.
-3. Начать этап 02 (`prompts/PROMPT_02_INGEST.md`) только после подтверждённого merge.
+1. Начать этап 02 (`prompts/PROMPT_02_INGEST.md`) отдельной рабочей веткой.
+2. Реализовать ingest и media catalog без функций музыкального анализа.
 
 ## Evidence этапа 01
 
@@ -23,6 +23,7 @@ port/service, SQLite migration skeleton и CLI `info`/`health`.
 - component — 6 pass;
 - console script, module entry point, `info` и повторный `health` — pass;
 - context pack validator и `git diff --check` — pass.
+- commits `3461c83` и `cd7e841` подтверждены в истории `main`.
 
 ## Правило завершения этапа
 Этап завершён только когда:

@@ -6,8 +6,10 @@
 
 Репозиторий содержит спецификацию и архитектуру проекта, критерии качества,
 поэтапные prompts реализации и интеграционный overlay AI Dev Team.
-Границы продукта описаны в [SPEC.md](SPEC.md), а текущее состояние реализации —
-в [PROGRESS.md](PROGRESS.md).
+Границы продукта описаны в [SPEC.md](SPEC.md), архитектура — в
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), а текущее состояние реализации —
+в [docs/AI_STATUS.md](docs/AI_STATUS.md). Подробные этапы собраны в
+[prompts/STAGES.md](prompts/STAGES.md).
 
 ## Локальная разработка
 

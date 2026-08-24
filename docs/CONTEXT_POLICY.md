@@ -5,7 +5,7 @@
 2. Корневой `AGENTS.md`.
 3. Активные модульные или локальные правила.
 4. Относящийся к задаче раздел `SPEC.md`.
-5. Относящийся к задаче раздел `ARCHITECTURE.md`.
+5. Относящийся к задаче раздел `docs/ARCHITECTURE.md`.
 6. Активный prompt этапа.
 7. Текущая задача, diff и тесты.
 
@@ -13,8 +13,8 @@
 
 Канонические источники:
 - требования: `SPEC.md`;
-- архитектура: `ARCHITECTURE.md` + `docs/DECISIONS.md`;
-- текущее состояние: `PROGRESS.md`;
+- архитектура: `docs/ARCHITECTURE.md` + `docs/DECISIONS.md`;
+- текущее состояние: `docs/AI_STATUS.md`;
 - prompts выполнения: `prompts/`;
 - хронология реализации: `DEV_LOG.md`;
 - учебные объяснения: `LEARNING.md`.

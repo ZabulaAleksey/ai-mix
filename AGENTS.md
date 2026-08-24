@@ -4,12 +4,12 @@
 
 ## Правила проекта
 - `project = overlay`: не дублируй универсальных агентов Architect / QA / Security / Git / Docs и не создавай второй Git workflow.
-- Перед реализацией прочитай `SPEC.md`, `ARCHITECTURE.md`, `docs/DECISIONS.md`, `PROGRESS.md` и активный prompt этапа.
+- Перед реализацией прочитай `SPEC.md`, `docs/ARCHITECTURE.md`, `docs/DECISIONS.md`, `docs/AI_STATUS.md` и активный раздел `prompts/STAGES.md`.
 - Бизнес-логика и DSP относятся к слоям Core/Application; UI, CLI, будущий MCP и интеграция с Adobe являются адаптерами.
 - При добавлении экспериментальных компонентов ML/GPU должен сохраняться эталонный DSP-путь на CPU.
 - Для экспериментальных функций обязательны: feature flag → fallback → тесты → benchmark → документация/ADR.
 - По умолчанию сохраняй пользовательские медиа локально. Никогда не добавляй в коммиты исходные треки, stems, экспортированные файлы, секреты или пользовательские наборы данных.
-- Вноси минимальные проверяемые изменения; обновляй тесты и `PROGRESS.md`.
+- Вноси минимальные проверяемые изменения; обновляй тесты и `docs/AI_STATUS.md`.
 - Этап завершён только после успешного прохождения его DoD/тестов и выполнения критериев review/merge.
 
 ## Загрузка контекста
@@ -17,15 +17,18 @@
 
 ## Обязательные документы проекта
 - `SPEC.md`
-- `ARCHITECTURE.md`
+- `docs/ARCHITECTURE.md`
 - `DESIGN.md`
-- `PROGRESS.md`
+- `docs/AI_PLAN.md`
+- `docs/AI_STATUS.md`
+- `docs/ROADMAP.md`
+- `docs/project-context.md`
 - `DEV_LOG.md`
 - `LEARNING.md`
 - `docs/DECISIONS.md`
 - `docs/CONTEXT_POLICY.md`
 - `docs/AI_DEV_TEAM_INTEGRATION.md`
-- `prompts/README.md`
+- `prompts/STAGES.md`
 
 
 ## Локальные правила тестирования
@@ -41,3 +44,7 @@
 ### E2E
 - Автоматизированные E2E-сценарии пока не внедрены.
 - Если необходимый сценарий ждёт backend/API или инфраструктуры, используем пометку: `BLOCKED_BY_BACKEND_AI_MIX`.
+
+# Наследование глобальных правил
+
+Перед началом работы прочитай `~/.codex/AGENTS.md`; этот файл содержит только project-specific overlay.

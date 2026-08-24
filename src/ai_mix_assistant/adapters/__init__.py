@@ -1,0 +1,1 @@
+"""Infrastructure and interface adapters."""

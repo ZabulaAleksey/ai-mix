@@ -20,6 +20,7 @@ models/
 *.sqlite
 .venv/
 __pycache__/
+.pytest_tmp*/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/

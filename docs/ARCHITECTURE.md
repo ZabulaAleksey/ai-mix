@@ -67,3 +67,11 @@ CLI (`ai-mix`, `python -m ai_mix_assistant`)
 - `adapters` содержит composition root CLI и SQLite-реализацию с connection-per-operation.
 - `info` является read-only; `health` — явная инициализирующая операция.
 - схема v1 содержит только `schema_migrations`; доменные таблицы принадлежат следующим этапам.
+
+## Контракт зависимостей
+
+- Источник истины (Source of truth): `pyproject.toml` и единственный lock-файл `uv.lock`; канонический менеджер — uv.
+- Чистое восстановление (Clean restore): удалить только disposable `.venv`, затем выполнить `uv sync --locked`.
+- Общий machine-level uv cache разрешён; локальная `.venv` является воспроизводимой проекцией и не коммитится.
+- Build/test caches и `.venv` можно очищать после подтверждённого restore; пользовательские media, SQLite state и другие runtime-данные в dependency cleanup не входят.
+- Локальные и CI-проверки должны использовать locked environment; baseline-команды — `uv run ruff format --check src tests`, `uv run ruff check src tests`, `uv run mypy src` и `uv run pytest tests/unit tests/integration tests/component`.

@@ -1,5 +1,11 @@
 # Статус AI
 
+## Dependency audit — 2026-08-24
+
+- Существующая связка uv + `pyproject.toml` + `uv.lock` признана канонической; migration не требуется.
+- Контракт clean restore, shared cache и границы безопасного cleanup зафиксированы в `docs/ARCHITECTURE.md`.
+- Product dependencies и runtime state не изменялись.
+
 ## Governance migration — 2026-08-24
 
 - Репозиторий находится в `~/codex-workspace/ai-mix`; подробные legacy prompts объединены в `prompts/STAGES.md`.

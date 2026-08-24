@@ -10,7 +10,7 @@
 
 - Репозиторий находится в `~/codex-workspace/ai-mix`; подробные legacy prompts объединены в `prompts/STAGES.md`.
 - `python tools/validate_context_pack.py` и глобальный project overlay validator — PASS.
-- Продуктовый код и tests не изменялись; push/merge не выполнялись.
+- Dependency audit локально интегрирован в `main`; продуктовый код и tests не изменялись, push не выполнялся.
 
 - Состояние: overlay консолидирован; продуктовый код не изменён.
 - Ветка: `chore/full-governance-migration`.

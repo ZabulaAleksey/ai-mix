@@ -5,11 +5,10 @@
 таймлайна для проверки и финальной обработки в Adobe Audition.
 
 Репозиторий содержит спецификацию и архитектуру проекта, критерии качества,
-поэтапные prompts реализации и интеграционный overlay AI Dev Team.
+канонические этапы реализации и интеграционный overlay AI Dev Team.
 Границы продукта описаны в [SPEC.md](SPEC.md), архитектура — в
-[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), а текущее состояние реализации —
-в [docs/AI_STATUS.md](docs/AI_STATUS.md). Подробные этапы собраны в
-[prompts/STAGES.md](prompts/STAGES.md).
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), а текущее состояние и этапы —
+в [docs/STAGES.md](docs/STAGES.md).
 
 ## Локальная разработка
 

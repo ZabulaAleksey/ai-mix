@@ -1,6 +1,54 @@
 # Канонические этапы ai-mix
 
-Этот файл объединяет уникальное содержание прежних stage-prompts. SPEC и проектные документы остаются источниками требований.
+- Stage ID: AM-INGEST-02
+
+Этот файл — единственный владелец current stage, lifecycle/status,
+blockers, execution evidence и NEXT. SPEC и проектные документы остаются
+источниками требований. Ниже сохранено unique содержание прежних
+stage launchers как исторический контекст, а не одновременные current states.
+
+## AM-INGEST-02 — базовый ingest и media catalog
+
+- Status: planned
+- NEXT: AM-INGEST-02-SPEC
+- Blockers: Stage 02 пока не имеет утверждённой behavior SPEC,
+  runnable consumer scenario и принятых ingest tests; product code
+  для этой функции не реализован. Старый PROMPT_02 — source для
+  refinement, но не заменяет requirements.
+- Prerequisites: Stage 01 commits `3461c83` и `cd7e841` входят в
+  GitHub `main` `913a1bf`. Isolated baseline на Python 3.12: 20
+  accepted tests PASS, strict mypy PASS, Ruff source/tests lint/format
+  PASS, context-pack validator PASS; CLI `info` и два последовательных
+  `health` прохода на task-local SQLite state PASS. Полный Ruff на
+  исходном `main` выявил только pre-existing import-order drift в
+  `tools/validate_context_pack.py`, исправляемый в path consumer delta.
+- Stage 02 evidence: implementation/tests отсутствуют; `planned`
+  не является completion claim.
+
+Цель из восстановленного legacy PROMPT_02: зарегистрировать неизменяемые
+исходные медиафайлы, получить метаданные через FFprobe, вычислить content
+fingerprints, обнаружить duplicates и хранить локальный media catalog.
+Исходные треки по умолчанию не копировать и не изменять. Анализ BPM,
+сегментов, score, GUI/ML/GPU и rendering относятся к будущим этапам.
+
+`AM-INGEST-02-SPEC`: сначала оформить требования, ownership каталога,
+failure/fallback, consumer CLI scenario и negative tests, согласовать
+архитектуру/ADR без реализации продукта в этой документационной migration.
+Затем bounded implementation slice и реальные tests/evidence. Старый
+PROMPT_02 ниже остаётся архивом уникального контекста.
+
+### Действие пользователя по state-owner migration
+
+- `USER-AM-STAGES-INTEGRATION` — `PENDING`, condition: isolated
+  `feature/docs-stages-canonical` commit/push, context-pack consumer и
+  accepted baseline checks готовы. Безопасное действие: разрешить merge
+  этой точной ветки в `main` после review сохранённых launchers и
+  historical AI facts. Ожидаемое evidence: clean main ancestry,
+  GitHub default branch содержит `docs/STAGES.md`, старые
+  `prompts/STAGES.md`, `docs/AI_PLAN.md`, `docs/AI_STATUS.md` отсутствуют,
+  context-pack validator и canonical adapter PASS, product tests без
+  regression. Это разблокирует единственный execution-state owner;
+  Stage 02 остается `planned` до собственной SPEC/implementation.
 
 ---
 

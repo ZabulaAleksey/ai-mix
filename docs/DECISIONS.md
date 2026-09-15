@@ -20,3 +20,14 @@
 
 ## ADR-007 — Последовательные миграции SQLite
 Версии локальной схемы учитывать только в таблице `schema_migrations`. Первая миграция создаёт сам механизм учёта и не добавляет будущие доменные таблицы. Новые миграции должны быть упорядоченными, идемпотентно применяться в транзакции и не переписывать уже применённые версии.
+
+## ADR-008 — Один execution-state owner в `docs/STAGES.md`
+
+После read-only reconciliation Stage 01 implementation commits и accepted
+tests подтверждены на GitHub `main`; следующий этап — ingest/media catalog,
+но его behavior SPEC и consumer test contract ещё не утверждены. Текущий
+`AM-INGEST-02` остаётся `planned`, первым NEXT является
+`AM-INGEST-02-SPEC`, не product implementation claim. Старые AI plan/status
+факты и launchers сохранены как historical evidence в `docs/notes` и ниже
+выбранного record `docs/STAGES.md`; текущим состоянием владеет только
+выбранный record. Исходные bytes сохранены в Git parent для rollback.

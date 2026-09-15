@@ -39,16 +39,11 @@ PROMPT_02 ниже остаётся архивом уникального кон
 
 ### Действие пользователя по state-owner migration
 
-- `USER-AM-STAGES-INTEGRATION` — `PENDING`, condition: isolated
-  `feature/docs-stages-canonical` commit/push, context-pack consumer и
-  accepted baseline checks готовы. Безопасное действие: разрешить merge
-  этой точной ветки в `main` после review сохранённых launchers и
-  historical AI facts. Ожидаемое evidence: clean main ancestry,
-  GitHub default branch содержит `docs/STAGES.md`, старые
-  `prompts/STAGES.md`, `docs/AI_PLAN.md`, `docs/AI_STATUS.md` отсутствуют,
-  context-pack validator и canonical adapter PASS, product tests без
-  regression. Это разблокирует единственный execution-state owner;
-  Stage 02 остается `planned` до собственной SPEC/implementation.
+- `USER-AM-STAGES-INTEGRATION` — `DONE`: пользователь разрешил merge
+  `feature/docs-stages-canonical`; `main` fast-forward до `b106a20` и
+  опубликован. GitHub read-back подтвердил только `docs/STAGES.md` из четырёх
+  state paths; 20 accepted tests, mypy, Ruff, context-pack и canonical
+  adapter прошли. Stage 02 остаётся `planned`; NEXT — `AM-INGEST-02-SPEC`.
 
 ---
 
